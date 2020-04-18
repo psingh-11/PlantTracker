@@ -1,10 +1,8 @@
-﻿using PlantDAL.EDMX;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
-using System.Web.Mvc;
 
 namespace PlantTracker.Models.Dto
 {
@@ -13,10 +11,8 @@ namespace PlantTracker.Models.Dto
 
         public System.Guid ID { get; set; }
         public string UserID { get; set; }
-        public string ParentOneID { get; set; }
-        public string ParentTwoID { get; set; }
-
-        public List<SelectListItem> Plants { get; set; } = new List<SelectListItem>();
+        public System.Guid ParentOneID { get; set; }
+        public Nullable<System.Guid> ParentTwoID { get; set; }
         public string Name { get; set; }
         public int Count { get; set; }
         public string Type { get; set; }
@@ -31,7 +27,6 @@ namespace PlantTracker.Models.Dto
         }
 
         public List<HttpPostedFileBase> Images { get; set; }
-        public List<string> imageFilePath { get; set; } = new List<string>();
 
         public CustomValueDto CustomValues1 { get; set; }
         public CustomValueDto CustomValues2 { get; set; }

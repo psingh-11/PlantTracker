@@ -22,7 +22,6 @@ namespace PlantDAL.EDMX
     
         public System.Guid ID { get; set; }
         public Nullable<System.DateTime> DateModified { get; set; }
-        public string Name { get; set; }
         public string Notes { get; set; }
         public Nullable<System.Guid> PlantID { get; set; }
         public string UserID { get; set; }

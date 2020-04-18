@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Journal";
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -136,14 +136,16 @@
 
     <div class="jumbotron">
         <div class="container">
-            <h1>Stress Level: Zero</h1>
-            <h2>Track your plants</h2>
-            <h2>Know your plants</h2>
+            <h1 style="text-align:left">Plant name here</h1>
+            <h2 style="text-align:left">View all photos</h2>
+            <img align="left" height="200" width="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Venus_Flytrap_showing_trigger_hairs.jpg/1280px-Venus_Flytrap_showing_trigger_hairs.jpg" class="rounded float-left" alt="...">
+
+
 
             <br />
             <p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">New Journal Entry »</a>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Add a new plant</a>
+                <a class="btn btn-primary btn-lg" href="#" role="button">View all journal entries »</a>
+
             </p>
         </div>
     </div>
@@ -157,21 +159,13 @@
             </div>
         </div>
     </div>
-    <div class="active-cyan-4 mb-4">
-        <input class="form-control" type="text" placeholder="Latest journal entry" aria-label="Search">
-    </div>
-    <div class="active-cyan-4 mb-4">
-        <input class="form-control" type="text" placeholder="Latest plant entry" aria-label="Search">
-    </div>
-    <div class="active-cyan-4 mb-4">
-        <input class="form-control" type="text" placeholder="Search journals" aria-label="Search">
-    </div>
-    <div class="active-cyan-4 mb-4">
-        <input class="form-control" type="text" placeholder="Find plants" aria-label="Search">
-    </div>
-    <div class="active-cyan-4 mb-4">
-        <input class="form-control" type="text" placeholder="Search whole app" aria-label="Search">
-    </div>
+
+    <form>
+        <div align="center" class="form-group">
+            <label for="exampleFormControlTextarea1">Journal date</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+        </div>
+    </form>
 
 
 

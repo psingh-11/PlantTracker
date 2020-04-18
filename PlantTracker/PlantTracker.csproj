@@ -258,9 +258,13 @@
     <Content Include="Views\Plant\PlantTable.cshtml" />
     <Content Include="Views\Plant\PlantDetails.cshtml" />
     <Content Include="Views\Plant\NewPlant.cshtml" />
+    <Content Include="Views\Journal\JournalTable.cshtml" />
+    <Content Include="Views\Home\IndexBackupCopy.cshtml" />
+    <Content Include="Views\Journal\Journal.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Controllers\Journal\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

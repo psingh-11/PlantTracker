@@ -62,19 +62,7 @@
     <Compile Include="EDMX\AspNetUsers.cs">
       <DependentUpon>PlantTrackerDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="EDMX\CustomValues1.cs">
-      <DependentUpon>PlantTrackerDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EDMX\CustomValues2.cs">
-      <DependentUpon>PlantTrackerDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EDMX\CustomValues3.cs">
-      <DependentUpon>PlantTrackerDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EDMX\CustomValues4.cs">
-      <DependentUpon>PlantTrackerDBModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EDMX\CustomValues5.cs">
+    <Compile Include="EDMX\CustomValues.cs">
       <DependentUpon>PlantTrackerDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="EDMX\C__MigrationHistory.cs">
@@ -105,11 +93,7 @@
       <DependentUpon>PlantTrackerDBModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\CustomValueFiveCRUD.cs" />
-    <Compile Include="Repository\CustomValueFourCRUD.cs" />
-    <Compile Include="Repository\CustomValueOneCRUD.cs" />
-    <Compile Include="Repository\CustomValueThree.cs" />
-    <Compile Include="Repository\CustomValueTwoCRUD.cs" />
+    <Compile Include="Repository\CustomValueCRUD.cs" />
     <Compile Include="Repository\ImageCRUD.cs" />
     <Compile Include="Repository\JournalCRUD.cs" />
     <Compile Include="Repository\PlantCRUD.cs" />

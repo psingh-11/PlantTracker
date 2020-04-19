@@ -4,18 +4,14 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using PlantDAL.EDMX;
-using PlantDAL.Repository;
 using PlantTracker.Models.Dto;
 
-namespace PlantTracker.Mappers
+namespace PlantTracker.Mapper
 {
     public class ImageMapper
     {
-        public static List<Images> MapHTTPToImage(List<HttpPostedFileBase> httpImages, PlantDto plant, string serverPath)
+        public static void MapHTTPToImage(List<HttpPostedFileBase> httpImages, PlantDto plant, string serverPath)
         {
-            List<Images> imgList = new List<Images>();
-
-
             var plantDir = serverPath;
             if (!Directory.Exists(plantDir))
             {
@@ -34,15 +30,10 @@ namespace PlantTracker.Mappers
                     img.ID = imageId;
                     img.ImageFilePath = ServerSavePath;
                     img.PlantID = plant.ID;
-                    //ImageCRUD.Insert(img);
 
                     file.SaveAs(ServerSavePath);
-
-                    imgList.Add(img);
                 }
             }
-
-            return imgList;
         }
     }
 }

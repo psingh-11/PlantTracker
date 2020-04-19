@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Journal";
+    ViewBag.Title = "Home Page";
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -20,77 +20,65 @@
     <![endif]-->
 
     <style>
-        .navbar {
-            margin-bottom: 0;
-        }
+    .navbar {
+    margin-bottom: 0;
+    }
+    body {
+    background: #3e4649;
+    color: #f7f7f7;
+    font-family: 'Montserrat', sans-serif;
+    }
+    h1,
+    h2 {
+    font-weight: bold;
+    }
+    p {
+    font-size: 16px;
+    color: #cdcdcd;
+    }
+    .jumbotron {
+    background: #27a967;
+    color: white;
+    text-align: center;
+    }
+    .jumbotron p {
+    color: white;
+    font-size: 26px;
+    }
+    .btn-primary {
+    color: #fff;
+    background-color: transparent;
+    border-color: white;
+    margin-bottom: 5px;
+    }
+    .btn-primary:hover {
+    color: #27a967;
+    background-color: white;
+    border-color: white;
+    }
+    .navbar-inverse {
+    background: #2e2f31;
+    border: 0;
+    }
+    .navbar-inverse .navbar-nav li a {
+    color: #f7f7f7;
+    font-size: 16px;
+    }
+    .navbar-inverse .navbar-nav li a:hover {
+    background: #27a967;
+    }
 
-        body {
-            background: #3e4649;
-            color: #f7f7f7;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        h1,
-        h2 {
-            font-weight: bold;
-        }
-
-        p {
-            font-size: 16px;
-            color: #cdcdcd;
-        }
-
-        .jumbotron {
-            background: #27a967;
-            color: white;
-            text-align: center;
-        }
-
-            .jumbotron p {
-                color: white;
-                font-size: 26px;
-            }
-
-        .btn-primary {
-            color: #fff;
-            background-color: transparent;
-            border-color: white;
-            margin-bottom: 5px;
-        }
-
-            .btn-primary:hover {
-                color: #27a967;
-                background-color: white;
-                border-color: white;
-            }
-
-        .navbar-inverse {
-            background: #2e2f31;
-            border: 0;
-        }
-
-            .navbar-inverse .navbar-nav li a {
-                color: #f7f7f7;
-                font-size: 16px;
-            }
-
-                .navbar-inverse .navbar-nav li a:hover {
-                    background: #27a967;
-                }
-
-        .dropdown-menu {
-            background: #2e2f31;
-            border-radius: 0;
-            border: 0;
-        }
-
-            .dropdown-menu li a {
-                padding: 10px;
-            }
-
-        .navbar-inverse .navbar-nav .dropdown-menu li a:hover {
-            background: #2c463c;
-        }
+    .dropdown-menu {
+    background: #2e2f31;
+    border-radius: 0;
+    border: 0;
+    }
+    .dropdown-menu li a {
+    padding: 10px;
+    }
+    .navbar-inverse .navbar-nav .dropdown-menu li a:hover {
+    background: #2c463c;
+    }
     </style>
 </head>
 <body>
@@ -136,16 +124,14 @@
 
     <div class="jumbotron">
         <div class="container">
-            <h1 style="text-align:left">Plant name here</h1>
-            <h2 style="text-align:left">View all photos</h2>
-            <img align="left" height="200" width="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Venus_Flytrap_showing_trigger_hairs.jpg/1280px-Venus_Flytrap_showing_trigger_hairs.jpg" class="rounded float-left" alt="...">
-
-
+            <h1>Stress Level: Zero</h1>
+            <h2>Track your plants</h2>
+            <h2>Know your plants</h2>
 
             <br />
             <p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">View all journal entries »</a>
-
+                <a class="btn btn-primary btn-lg" href="#" role="button">New Journal Entry »</a>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Add a new plant</a>
             </p>
         </div>
     </div>
@@ -159,13 +145,21 @@
             </div>
         </div>
     </div>
-
-    <form>
-        <div align="center" class="form-group">
-            <label for="exampleFormControlTextarea1">Journal date</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
-        </div>
-    </form>
+    <div class="active-cyan-4 mb-4">
+        <input class="form-control" type="text" placeholder="Latest journal entry" aria-label="Search">
+    </div>
+    <div class="active-cyan-4 mb-4">
+        <input class="form-control" type="text" placeholder="Latest plant entry" aria-label="Search">
+    </div>
+    <div class="active-cyan-4 mb-4">
+        <input class="form-control" type="text" placeholder="Search journals" aria-label="Search">
+    </div>
+    <div class="active-cyan-4 mb-4">
+        <input class="form-control" type="text" placeholder="Find plants" aria-label="Search">
+    </div>
+    <div class="active-cyan-4 mb-4">
+        <input class="form-control" type="text" placeholder="Search whole app" aria-label="Search">
+    </div>
 
 
 

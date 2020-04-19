@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Journal";
+    ViewBag.Title = "Journal Table";
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -144,7 +144,7 @@
 
             <br />
             <p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">View all journal entries »</a>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Make a new journal entry »</a>
 
             </p>
         </div>
@@ -160,12 +160,35 @@
         </div>
     </div>
 
-    <form>
-        <div align="center" class="form-group">
-            <label for="exampleFormControlTextarea1">Journal date</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
-        </div>
-    </form>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Plant</th>
+                <th scope="col">Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1/3/2020</th>
+                <td>Venus flytrap</td>
+                <td>Click here</td>
+
+            </tr>
+            <tr>
+                <th scope="row">1/7/2020</th>
+                <td>Venus flytrap</td>
+                <td>Click here</td>
+
+            </tr>
+            <tr>
+                <th scope="row">1/12/2020</th>
+                <td>Venus flytrap</td>
+                <td>Click here</td>
+
+            </tr>
+        </tbody>
+    </table>
 
 
 

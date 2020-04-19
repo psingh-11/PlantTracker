@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PlantDAL.Repository
 {
-    public static class CustomValueCRUD
+    public static class CustomValueFourCRUD
     {
         public static void Insert()
         {
@@ -34,15 +34,12 @@ namespace PlantDAL.Repository
         }
 
 
-        public static CustomValues GetByID(Guid? id)
+        public static void GetByID()
         {
-            CustomValues cv = new CustomValues();
             using (PlantTrackerDBEntities ctx = new PlantTrackerDBEntities())
             {
-                cv = ctx.CustomValues.FirstOrDefault(x => x.ID == id);
-            }
 
-            return cv;
+            }
         }
     }
 }

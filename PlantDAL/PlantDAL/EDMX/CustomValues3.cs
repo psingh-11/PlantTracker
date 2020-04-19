@@ -12,16 +12,12 @@ namespace PlantDAL.EDMX
     using System;
     using System.Collections.Generic;
     
-    public partial class CustomValues
+    public partial class CustomValues3
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public CustomValues()
+        public CustomValues3()
         {
             this.Plant = new HashSet<Plant>();
-            this.Plant1 = new HashSet<Plant>();
-            this.Plant2 = new HashSet<Plant>();
-            this.Plant3 = new HashSet<Plant>();
-            this.Plant4 = new HashSet<Plant>();
         }
     
         public System.Guid ID { get; set; }
@@ -30,13 +26,5 @@ namespace PlantDAL.EDMX
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Plant> Plant { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Plant> Plant1 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Plant> Plant2 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Plant> Plant3 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Plant> Plant4 { get; set; }
     }
 }

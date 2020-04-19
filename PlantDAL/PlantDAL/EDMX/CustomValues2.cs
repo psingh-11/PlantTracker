@@ -12,22 +12,19 @@ namespace PlantDAL.EDMX
     using System;
     using System.Collections.Generic;
     
-    public partial class Journal
+    public partial class CustomValues2
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Journal()
+        public CustomValues2()
         {
-            this.Images = new HashSet<Images>();
+            this.Plant = new HashSet<Plant>();
         }
     
         public System.Guid ID { get; set; }
-        public Nullable<System.DateTime> DateModified { get; set; }
+        public string Name { get; set; }
         public string Notes { get; set; }
-        public Nullable<System.Guid> PlantID { get; set; }
-        public string UserID { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Images> Images { get; set; }
-        public virtual Plant Plant { get; set; }
+        public virtual ICollection<Plant> Plant { get; set; }
     }
 }
